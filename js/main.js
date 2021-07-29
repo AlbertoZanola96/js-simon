@@ -1,5 +1,20 @@
-
 // Un alert() espone 5 numeri generati casualmente.
+
+var numeri = [];
+
+for (let i = 0; i < 5; i++) {
+    numeri.push(random(1, 100));
+}
+
+alert(numeri);
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+
+
+
 
 
 
